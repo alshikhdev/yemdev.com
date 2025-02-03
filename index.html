@@ -10,53 +10,89 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: 'Arial', sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
 
         body {
-            height: 100vh;
             display: flex;
             justify-content: center;
             align-items: center;
-            background: linear-gradient(to right, #00bcd4, #0288d1);
-            color: white;
+            height: 100vh;
+            background: linear-gradient(135deg, #004d7f, #00bcd4);
+            color: #fff;
             text-align: center;
+            overflow: hidden;
         }
 
         .container {
-            max-width: 700px;
+            max-width: 900px;
             width: 100%;
-            padding: 40px;
+            padding: 40px 60px;
             background: rgba(0, 0, 0, 0.6);
-            border-radius: 15px;
-            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+            border-radius: 20px;
+            box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.2);
+            animation: fadeIn 1.5s ease-out;
         }
 
         h1 {
-            font-size: 48px;
-            font-weight: bold;
+            font-size: 50px;
+            font-weight: 900;
             letter-spacing: 2px;
             text-transform: uppercase;
-            margin-bottom: 20px;
+            margin-bottom: 15px;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
         }
 
         p {
-            font-size: 24px;
+            font-size: 28px;
+            font-weight: 500;
             line-height: 1.6;
+            margin-bottom: 30px;
+            opacity: 0.85;
+        }
+
+        .cta {
+            display: inline-block;
+            padding: 12px 35px;
+            background-color: #ff5722;
+            color: white;
+            font-size: 18px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: transform 0.3s ease, background 0.3s ease;
+        }
+
+        .cta:hover {
+            background-color: #e64a19;
+            transform: scale(1.05);
         }
 
         footer {
-            margin-top: 30px;
+            margin-top: 40px;
             font-size: 16px;
-            color: #bdbdbd;
+            color: #ddd;
+            letter-spacing: 1px;
+            opacity: 0.7;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>Stay Tuned</h1>
-        <p>for the big reveal!</p>
-        <footer>© 2025 YemDev. All rights reserved.</footer>
+        <p>for the big reveal! We are bringing something extraordinary to the world of tech and development.</p>
+        <a href="#" class="cta">Join the Movement</a>
+        <footer>© 2025 YemDev. All rights reserved. | Innovating the Future of Development</footer>
     </div>
 </body>
 </html>
